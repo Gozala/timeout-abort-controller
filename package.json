@@ -19,6 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "abort-controller": "^3.0.0",
+    "native-abort-controller": "^0.0.3",
     "retimer": "^2.0.0"
   },
   "devDependencies": {

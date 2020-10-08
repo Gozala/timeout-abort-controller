@@ -1,12 +1,6 @@
-/* globals self, window */
 'use strict'
 
-// Get around https://github.com/mysticatea/abort-controller/pull/22
-const { AbortController } =
-  typeof self !== 'undefined' ? self
-    : typeof window !== 'undefined' ? window
-    /* otherwise */ : require('abort-controller')
-
+const AbortController = require('native-abort-controller')
 const retimer = require('retimer')
 
 class TimeoutController extends AbortController {
